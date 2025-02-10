@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-link</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #181f27;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-form {
+            background-color: #2e3842;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        .contact-form h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-form .input-box {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .input-box input, 
+        .contact-form .input-box textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: #1f262f;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-form .input-box textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form .input-box button {
+            background-color: #2ec27e;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form .input-box button:hover {
+            background-color: #28b174;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Get In Touch</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" required placeholder="Your Name">
+            </div>
+            <div class="input-box">
+                <input type="email" required placeholder="Your Email">
+            </div>
+            <div class="input-box">
+                <input type="text" required placeholder="Your phone Number">
+            </div>
+            <div class="input-box">
+                <textarea required placeholder="Your Message"></textarea>
+            </div>
+            <div class="input-box">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
